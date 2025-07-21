@@ -1,24 +1,53 @@
-# 🔐 Password Strength Checker CLI Tool
+🔐 Password Strength Checker CLI Tool
+A feature-rich command-line tool built using JavaScript (Node.js) to analyze and validate passwords using various methods including dictionary checks and brute-force. Supports file input/output and hashing validation with progress bar support.
 
-A simple and effective **Command Line Interface (CLI)** tool built with **Node.js** to check the strength of a password and compare it against a list of common weak passwords.
+📦 Features
+✅ Check passwords using a dictionary wordlist (-d)
 
----
+🔁 Brute-force password cracking simulation (-b)
 
-## 📦 Features
+📂 Input password list from file (-l input.txt)
 
-- ✅ Checks password strength (Weak, Medium, Strong)
-- ✅ Detects if the password exists in a common weak passwords list
-- ✅ Color-coded output using `chalk`
-- ✅ Easy to use via command line
-- ✅ Supports modern ES modules
+📄 Output results to a file (-o output.txt)
 
----
+🔎 Check a single hashed password (-i <hash>)
 
-## 🛠️ Installation
+🔤 Use your own dictionary wordlist file (-w wordlist.txt)
 
-Make sure you have **Node.js** (v14 or above) installed.
+📊 Command-line progress bar for visual feedback
 
-```bash
-npm install -g password-strength-checker-cli-tool
+🛠 Requirements
+Node.js v18 or above (v22 recommended)
 
-checkpass --password "YourPasswordHere"
+Enable ES Modules (already enabled by using .mjs or "type": "module" in package.json)
+
+📦 Installation:
+git clone https://github.com/prabhakaranskt/password-strength-checker-CLI-tool.git
+cd password-strength-checker-CLI-tool
+npm install
+
+
+Usage:
+🔍 1. Dictionary Check Mode
+bash
+
+node src/cli.js -d -l input.txt -w wordlist/common-passwords.txt -o output.txt
+
+Checks each password in input.txt against the dictionary wordlist.
+
+Outputs results to output.txt.
+
+🧠 2. Bruteforce Simulation Mode
+bash
+node src/cli.js -b -l input.txt -o output.txt
+
+Simulates brute-force cracking (time-based, not real cracking).
+
+Output written to output.txt.
+
+🔐 3. Hash Check Mode
+bash
+node src/cli.js -i <hashed_password> -w wordlist/common-passwords.txt
+
+Verifies if the hashed password exists in your wordlist.
+

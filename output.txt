@@ -1,0 +1,40 @@
+Password: password
+Strength: Very Weak
+Dictionary Match: false
+Hash Match: false
+---
+Password: MyTest@123
+Strength: Strong
+Dictionary Match: false
+Hash Match: false
+---
+Password: admin123
+Strength: Weak
+Dictionary Match: false
+Hash Match: false
+---
+Password: supersecurepassword
+Strength: Weak
+Dictionary Match: false
+Hash Match: false
+---
+Password: letmein
+Strength: Very Weak
+Dictionary Match: false
+Hash Match: false
+---
+Password: 12345678
+Strength: Very Weak
+Dictionary Match: false
+Hash Match: false
+---
+Password: mypassword
+Strength: Weak
+Dictionary Match: false
+Hash Match: false
+---
+Password: Password@123
+Strength: Strong
+Dictionary Match: false
+Hash Match: false
+---

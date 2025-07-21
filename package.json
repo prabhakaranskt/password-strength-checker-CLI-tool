@@ -15,7 +15,7 @@
   "type": "module",
   "main": "src/cli.js",
   "bin": {
-    "checkpass": "./src/cli.js"
+    "checkpass": "src/cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,6 +23,8 @@
   },
   "dependencies": {
     "chalk": "^5.4.1",
+    "cli-progress": "^3.12.0",
+    "nanospinner": "^1.2.2",
     "yargs": "^18.0.0"
   }
 }

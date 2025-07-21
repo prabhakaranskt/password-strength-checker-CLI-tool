@@ -1,0 +1,8 @@
+password
+MyTest@123
+admin123
+supersecurepassword
+letmein
+12345678
+mypassword
+Password@123
