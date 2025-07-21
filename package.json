@@ -1,6 +1,6 @@
 {
   "name": "password-strength-checker-cli-tool",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A CLI Tool to Check Password Strength",
   "homepage": "https://github.com/prabhakaranskt/password-strength-checker-CLI-tool#readme",
   "bugs": {
