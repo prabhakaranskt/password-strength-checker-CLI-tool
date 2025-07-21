@@ -37,12 +37,14 @@ export const cli = async () => {
             case 'Weak':
                 console.log(chalk.red('Strength: WEAK'));
                 break;
-            case 'MEDIUM':
+            case 'Medium':
                 console.log(chalk.yellow('Strength: MEDIUM'));
                 break;
             case 'Strong':
                 console.log(chalk.green('Strength: STRONG'));
                 break;
+            default:
+                console.log(chalk.gray('Unknown strength level'));
         }
 }
 
