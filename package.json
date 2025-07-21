@@ -1,0 +1,28 @@
+{
+  "name": "password-strength-checker-cli-tool",
+  "version": "1.0.1",
+  "description": "A CLI Tool to Check Password Strength",
+  "homepage": "https://github.com/prabhakaranskt/password-strength-checker-CLI-tool#readme",
+  "bugs": {
+    "url": "https://github.com/prabhakaranskt/password-strength-checker-CLI-tool/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prabhakaranskt/password-strength-checker-CLI-tool.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "src/cli.js",
+  "bin": {
+    "checkpass": "./src/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/cli.js --password 'Test123!'"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "yargs": "^18.0.0"
+  }
+}
