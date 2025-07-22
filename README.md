@@ -1,27 +1,38 @@
-Password Strength Checker CLI Tool
+# 🔐 Password Strength Checker CLI Tool
 
-    A feature-rich command-line tool built using JavaScript (Node.js) to analyze and validate passwords using various methods including dictionary checks and brute-force. Supports file input/output and hashing validation with progress bar support.
+A feature-rich command-line tool built using **JavaScript (Node.js)** to analyze and validate passwords using various methods including dictionary checks, brute-force simulation, hashing, file input/output, and live progress bars.
 
-Tech Stack
-    - Language: NodeJS
+---
 
-Features
+## ⚙️ Tech Stack
 
--Check passwords using a dictionary wordlist (-d)
--Brute-force password cracking simulation (-b)
--Input password list from file (-l input.txt)
--Output results to a file (-o output.txt)
--Check a single hashed password (-i <hash>)
--Use your own dictionary wordlist file (-w wordlist.txt)
--Command-line progress bar for visual feedback
+- Language: **Node.js (ES Modules)**
 
-Requirements
+---
 
-Node.js v18 or above (v22 recommended)
-Enable ES Modules (already enabled by using .mjs or "type": "module" in package.json)
+## ✨ Features
 
-Installation:
+- ✅ Check password strength with scoring
+- 📖 Check passwords using a **dictionary wordlist** (`-d`)
+- 🧠 Brute-force password cracking simulation (`-b`)
+- 📂 Input passwords from a file (`-l input.txt`)
+- 📝 Save output results to a file (`-o output.txt`)
+- 🔐 Check a single **hashed password** (`-i <hash>`)
+- 🧾 Use a **custom dictionary wordlist** (`-w wordlist.txt`)
+- 📊 **Command-line progress bar** for long-running operations
 
+---
+
+## 🧰 Requirements
+
+- Node.js **v18+** (recommended: v20+)
+- `"type": "module"` must be set in `package.json` to use ES modules
+
+---
+
+## 📦 Installation
+
+```bash
 git clone https://github.com/prabhakaranskt/password-strength-checker-CLI-tool.git
 cd password-strength-checker-CLI-tool
 npm install
@@ -33,26 +44,17 @@ Usage:
 
     node src/cli.js -p "YOUR PASSWORD"
 
-
 2. Dictionary Check Mode
 
     node src/cli.js -d -w wordlist.txt --password 'YOUR PASSWORD'
-
-Checks each password in input.txt against the dictionary wordlist.
-
 
 3. Bruteforce Simulation Mode
 
     node src/cli.js -b -p 'YOUR PASSWORD'
 
-Simulates brute-force cracking (time-based, not real cracking).
-
-
 4. Hash Check Mode
 
     node src/cli.js -i -p 'YOUR PASSWORD'
-
-Verifies if the hashed password exists in your wordlist.
 
 5. Test Input File & Output File
 
