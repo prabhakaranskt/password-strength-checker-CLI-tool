@@ -47,10 +47,10 @@ Usage:
 ```
 
 2. Dictionary Check Mode
-    ```bash
+```bash
     node src/cli.js -d -w wordlist.txt --password 'YOUR PASSWORD'
-```
 
+```
 3. Bruteforce Simulation Mode
     ```bash
     node src/cli.js -b -p 'YOUR PASSWORD'
@@ -58,7 +58,8 @@ Usage:
 
 4. Hash Check Mode
 
-    ```bash
+```bash
+
     node src/cli.js -i -p 'YOUR PASSWORD'
 ```
 
