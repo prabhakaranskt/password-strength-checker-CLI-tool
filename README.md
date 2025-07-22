@@ -48,8 +48,8 @@ Usage:
 
 2. Dictionary Check Mode
 ```bash
-    node src/cli.js -d -w wordlist.txt --password 'YOUR PASSWORD'
-````
+    node src/cli.js -d -w wordlist.txt --password 'YOUR PASSWORD' 
+ ```
 3. Bruteforce Simulation Mode
     ```bash
     node src/cli.js -b -p 'YOUR PASSWORD'
@@ -59,7 +59,8 @@ Usage:
 
 ```bash
 
-    node src/cli.js -i -p 'YOUR PASSWORD' ```
+    node src/cli.js -i -p 'YOUR PASSWORD'
+ ```
 
 
 5. Test Input File & Output File
