@@ -43,15 +43,16 @@ Usage:
 
 1. Check a Single Password
     ```bash
-    node src/cli.js -p "YOUR PASSWORD"
-```
+    node src/cli.js -p "YOUR PASSWORD" ```
 
 2. Dictionary Check Mode
 ```bash
     node src/cli.js -d -w wordlist.txt --password 'YOUR PASSWORD' 
- ```
+```
+
+
 3. Bruteforce Simulation Mode
-    ```bash
+```bash
     node src/cli.js -b -p 'YOUR PASSWORD'
 ```
 
