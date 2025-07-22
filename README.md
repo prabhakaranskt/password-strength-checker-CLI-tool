@@ -57,6 +57,7 @@ Usage:
 ```
 
 4. Hash Check Mode
+
     ```bash
     node src/cli.js -i -p 'YOUR PASSWORD'
 ```
