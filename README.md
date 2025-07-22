@@ -41,21 +41,21 @@ npm install
 Usage:
 
 1. Check a Single Password
-
+    ```bash
     node src/cli.js -p "YOUR PASSWORD"
 
 2. Dictionary Check Mode
-
+    ```bash
     node src/cli.js -d -w wordlist.txt --password 'YOUR PASSWORD'
 
 3. Bruteforce Simulation Mode
-
+    ```bash
     node src/cli.js -b -p 'YOUR PASSWORD'
 
 4. Hash Check Mode
-
+    ```bash
     node src/cli.js -i -p 'YOUR PASSWORD'
 
 5. Test Input File & Output File
-
+    ```bash
     node src/cli.js -l input.txt -o output.txt
